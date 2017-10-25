@@ -49,8 +49,8 @@ class Player {
   }
 
   prettyTime(timeInSeconds){
-    var minutes = Math.floor(timeInSeconds*60);
-    var seconds = Math.floor((timeInSeconds % 60) * 60);
+    var minutes = Math.floor(timeInSeconds/60);
+    var seconds = Math.floor(((timeInSeconds/60) % 1) * 60);
     return(minutes + ":" + seconds);
   }
 }
